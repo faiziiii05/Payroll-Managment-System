@@ -30,8 +30,6 @@
         {
             this.MainPanel = new System.Windows.Forms.Panel();
             this.topHeaderPanel = new System.Windows.Forms.Panel();
-            this.minimizePictureBox = new System.Windows.Forms.PictureBox();
-            this.crossPictureBox = new System.Windows.Forms.PictureBox();
             this.loginBtn = new System.Windows.Forms.Button();
             this.ErrorLabel = new System.Windows.Forms.Label();
             this.adminRadio = new System.Windows.Forms.RadioButton();
@@ -40,25 +38,29 @@
             this.passwordPanelLine = new System.Windows.Forms.Panel();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.usernamePanelaLine = new System.Windows.Forms.Panel();
-            this.passwordPictureBox = new System.Windows.Forms.PictureBox();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
-            this.userPictureBox = new System.Windows.Forms.PictureBox();
             this.loginLabel = new System.Windows.Forms.Label();
             this.LeftPanel = new System.Windows.Forms.Panel();
             this.NameSystem = new System.Windows.Forms.Label();
+            this.showpas = new System.Windows.Forms.CheckBox();
+            this.minimizePictureBox = new System.Windows.Forms.PictureBox();
+            this.crossPictureBox = new System.Windows.Forms.PictureBox();
+            this.passwordPictureBox = new System.Windows.Forms.PictureBox();
+            this.userPictureBox = new System.Windows.Forms.PictureBox();
             this.logoPicstureBox = new System.Windows.Forms.PictureBox();
             this.MainPanel.SuspendLayout();
             this.topHeaderPanel.SuspendLayout();
+            this.LeftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crossPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.passwordPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
-            this.LeftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicstureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // MainPanel
             // 
+            this.MainPanel.Controls.Add(this.showpas);
             this.MainPanel.Controls.Add(this.topHeaderPanel);
             this.MainPanel.Controls.Add(this.loginBtn);
             this.MainPanel.Controls.Add(this.ErrorLabel);
@@ -77,6 +79,7 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(636, 500);
             this.MainPanel.TabIndex = 4;
+            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
             // topHeaderPanel
             // 
@@ -88,32 +91,12 @@
             this.topHeaderPanel.Size = new System.Drawing.Size(636, 64);
             this.topHeaderPanel.TabIndex = 12;
             // 
-            // minimizePictureBox
-            // 
-            this.minimizePictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.minimize;
-            this.minimizePictureBox.Location = new System.Drawing.Point(563, 3);
-            this.minimizePictureBox.Name = "minimizePictureBox";
-            this.minimizePictureBox.Size = new System.Drawing.Size(32, 29);
-            this.minimizePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.minimizePictureBox.TabIndex = 5;
-            this.minimizePictureBox.TabStop = false;
-            // 
-            // crossPictureBox
-            // 
-            this.crossPictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.cross;
-            this.crossPictureBox.Location = new System.Drawing.Point(601, 3);
-            this.crossPictureBox.Name = "crossPictureBox";
-            this.crossPictureBox.Size = new System.Drawing.Size(32, 29);
-            this.crossPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.crossPictureBox.TabIndex = 4;
-            this.crossPictureBox.TabStop = false;
-            // 
             // loginBtn
             // 
             this.loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginBtn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.White;
-            this.loginBtn.Location = new System.Drawing.Point(105, 370);
+            this.loginBtn.Location = new System.Drawing.Point(54, 379);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(359, 37);
             this.loginBtn.TabIndex = 11;
@@ -127,7 +110,7 @@
             this.ErrorLabel.AutoSize = true;
             this.ErrorLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ErrorLabel.ForeColor = System.Drawing.Color.Red;
-            this.ErrorLabel.Location = new System.Drawing.Point(99, 309);
+            this.ErrorLabel.Location = new System.Drawing.Point(48, 332);
             this.ErrorLabel.Name = "ErrorLabel";
             this.ErrorLabel.Size = new System.Drawing.Size(112, 31);
             this.ErrorLabel.TabIndex = 10;
@@ -138,7 +121,7 @@
             this.adminRadio.AutoSize = true;
             this.adminRadio.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adminRadio.ForeColor = System.Drawing.Color.White;
-            this.adminRadio.Location = new System.Drawing.Point(344, 261);
+            this.adminRadio.Location = new System.Drawing.Point(326, 285);
             this.adminRadio.Name = "adminRadio";
             this.adminRadio.Size = new System.Drawing.Size(87, 28);
             this.adminRadio.TabIndex = 9;
@@ -151,7 +134,7 @@
             this.StaffRadio.AutoSize = true;
             this.StaffRadio.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StaffRadio.ForeColor = System.Drawing.Color.White;
-            this.StaffRadio.Location = new System.Drawing.Point(233, 261);
+            this.StaffRadio.Location = new System.Drawing.Point(200, 285);
             this.StaffRadio.Name = "StaffRadio";
             this.StaffRadio.Size = new System.Drawing.Size(72, 28);
             this.StaffRadio.TabIndex = 8;
@@ -164,7 +147,7 @@
             this.roleLabel.AutoSize = true;
             this.roleLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roleLabel.ForeColor = System.Drawing.Color.Red;
-            this.roleLabel.Location = new System.Drawing.Point(108, 257);
+            this.roleLabel.Location = new System.Drawing.Point(48, 282);
             this.roleLabel.Name = "roleLabel";
             this.roleLabel.Size = new System.Drawing.Size(72, 31);
             this.roleLabel.TabIndex = 7;
@@ -174,7 +157,7 @@
             // 
             this.passwordPanelLine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.passwordPanelLine.ForeColor = System.Drawing.Color.White;
-            this.passwordPanelLine.Location = new System.Drawing.Point(105, 232);
+            this.passwordPanelLine.Location = new System.Drawing.Point(54, 232);
             this.passwordPanelLine.Name = "passwordPanelLine";
             this.passwordPanelLine.Size = new System.Drawing.Size(359, 2);
             this.passwordPanelLine.TabIndex = 6;
@@ -185,30 +168,24 @@
             this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTextBox.ForeColor = System.Drawing.Color.White;
-            this.passwordTextBox.Location = new System.Drawing.Point(155, 198);
+            this.passwordTextBox.Location = new System.Drawing.Point(105, 198);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(309, 25);
             this.passwordTextBox.TabIndex = 5;
             this.passwordTextBox.Text = "Password";
+            this.passwordTextBox.UseSystemPasswordChar = true;
+            this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
+            this.passwordTextBox.MouseEnter += new System.EventHandler(this.passwordTextBox_MouseEnter);
+            this.passwordTextBox.MouseLeave += new System.EventHandler(this.passwordTextBox_MouseLeave);
             // 
             // usernamePanelaLine
             // 
             this.usernamePanelaLine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.usernamePanelaLine.ForeColor = System.Drawing.Color.White;
-            this.usernamePanelaLine.Location = new System.Drawing.Point(105, 143);
+            this.usernamePanelaLine.Location = new System.Drawing.Point(54, 140);
             this.usernamePanelaLine.Name = "usernamePanelaLine";
             this.usernamePanelaLine.Size = new System.Drawing.Size(359, 2);
             this.usernamePanelaLine.TabIndex = 3;
-            // 
-            // passwordPictureBox
-            // 
-            this.passwordPictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.password;
-            this.passwordPictureBox.Location = new System.Drawing.Point(104, 189);
-            this.passwordPictureBox.Name = "passwordPictureBox";
-            this.passwordPictureBox.Size = new System.Drawing.Size(45, 37);
-            this.passwordPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.passwordPictureBox.TabIndex = 4;
-            this.passwordPictureBox.TabStop = false;
             // 
             // usernameTextBox
             // 
@@ -216,21 +193,14 @@
             this.usernameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usernameTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameTextBox.ForeColor = System.Drawing.Color.White;
-            this.usernameTextBox.Location = new System.Drawing.Point(155, 109);
+            this.usernameTextBox.Location = new System.Drawing.Point(105, 109);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(309, 25);
             this.usernameTextBox.TabIndex = 2;
             this.usernameTextBox.Text = "Username";
-            // 
-            // userPictureBox
-            // 
-            this.userPictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.user;
-            this.userPictureBox.Location = new System.Drawing.Point(104, 100);
-            this.userPictureBox.Name = "userPictureBox";
-            this.userPictureBox.Size = new System.Drawing.Size(45, 37);
-            this.userPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.userPictureBox.TabIndex = 1;
-            this.userPictureBox.TabStop = false;
+            this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
+            this.usernameTextBox.MouseEnter += new System.EventHandler(this.usernameTextBox_MouseEnter);
+            this.usernameTextBox.MouseLeave += new System.EventHandler(this.usernameTextBox_MouseLeave);
             // 
             // loginLabel
             // 
@@ -260,13 +230,65 @@
             this.NameSystem.ForeColor = System.Drawing.Color.White;
             this.NameSystem.Location = new System.Drawing.Point(12, 246);
             this.NameSystem.Name = "NameSystem";
-            this.NameSystem.Size = new System.Drawing.Size(141, 27);
+            this.NameSystem.Size = new System.Drawing.Size(114, 27);
             this.NameSystem.TabIndex = 3;
-            this.NameSystem.Text = "Hidden Leaf";
+            this.NameSystem.Text = "Akatsuki";
+            // 
+            // showpas
+            // 
+            this.showpas.AutoSize = true;
+            this.showpas.ForeColor = System.Drawing.Color.White;
+            this.showpas.Location = new System.Drawing.Point(312, 246);
+            this.showpas.Name = "showpas";
+            this.showpas.Size = new System.Drawing.Size(102, 17);
+            this.showpas.TabIndex = 13;
+            this.showpas.Text = "Show Password";
+            this.showpas.UseVisualStyleBackColor = true;
+            this.showpas.CheckedChanged += new System.EventHandler(this.showpas_CheckedChanged);
+            // 
+            // minimizePictureBox
+            // 
+            this.minimizePictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.minimize;
+            this.minimizePictureBox.Location = new System.Drawing.Point(563, 3);
+            this.minimizePictureBox.Name = "minimizePictureBox";
+            this.minimizePictureBox.Size = new System.Drawing.Size(32, 29);
+            this.minimizePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.minimizePictureBox.TabIndex = 5;
+            this.minimizePictureBox.TabStop = false;
+            // 
+            // crossPictureBox
+            // 
+            this.crossPictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.cross;
+            this.crossPictureBox.Location = new System.Drawing.Point(601, 3);
+            this.crossPictureBox.Name = "crossPictureBox";
+            this.crossPictureBox.Size = new System.Drawing.Size(32, 29);
+            this.crossPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.crossPictureBox.TabIndex = 4;
+            this.crossPictureBox.TabStop = false;
+            // 
+            // passwordPictureBox
+            // 
+            this.passwordPictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.password;
+            this.passwordPictureBox.Location = new System.Drawing.Point(54, 186);
+            this.passwordPictureBox.Name = "passwordPictureBox";
+            this.passwordPictureBox.Size = new System.Drawing.Size(45, 37);
+            this.passwordPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.passwordPictureBox.TabIndex = 4;
+            this.passwordPictureBox.TabStop = false;
+            // 
+            // userPictureBox
+            // 
+            this.userPictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.user;
+            this.userPictureBox.Location = new System.Drawing.Point(54, 97);
+            this.userPictureBox.Name = "userPictureBox";
+            this.userPictureBox.Size = new System.Drawing.Size(45, 37);
+            this.userPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.userPictureBox.TabIndex = 1;
+            this.userPictureBox.TabStop = false;
             // 
             // logoPicstureBox
             // 
-            this.logoPicstureBox.Image = global::PayrollManagmentSystem.Properties.Resources.cross;
+            this.logoPicstureBox.Image = global::PayrollManagmentSystem.Properties.Resources._44c500d63004afab3b23ca608fc760ea;
             this.logoPicstureBox.Location = new System.Drawing.Point(27, 159);
             this.logoPicstureBox.Name = "logoPicstureBox";
             this.logoPicstureBox.Size = new System.Drawing.Size(102, 75);
@@ -289,12 +311,12 @@
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
             this.topHeaderPanel.ResumeLayout(false);
+            this.LeftPanel.ResumeLayout(false);
+            this.LeftPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crossPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.passwordPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
-            this.LeftPanel.ResumeLayout(false);
-            this.LeftPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicstureBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -321,5 +343,6 @@
         private System.Windows.Forms.Panel LeftPanel;
         private System.Windows.Forms.Label NameSystem;
         private System.Windows.Forms.PictureBox logoPicstureBox;
+        private System.Windows.Forms.CheckBox showpas;
     }
 }
