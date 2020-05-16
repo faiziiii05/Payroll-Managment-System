@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace PayrollManagmentSystem
 {
-    public partial class AdminForm : Form
+    public partial class searchemployee : Form
     {
-        public AdminForm()
+        public searchemployee()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            searchemployee search = new searchemployee();
-            search.Show();
         }
     }
 }

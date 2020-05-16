@@ -30,28 +30,29 @@
         {
             this.MainPanel = new System.Windows.Forms.Panel();
             this.topHeaderPanel = new System.Windows.Forms.Panel();
-            this.minimizePictureBox = new System.Windows.Forms.PictureBox();
-            this.crossPictureBox = new System.Windows.Forms.PictureBox();
-            this.loginLabel = new System.Windows.Forms.Label();
             this.LeftPanel = new System.Windows.Forms.Panel();
             this.NameSystem = new System.Windows.Forms.Label();
+            this.minimizePictureBox = new System.Windows.Forms.PictureBox();
+            this.crossPictureBox = new System.Windows.Forms.PictureBox();
             this.logoPicstureBox = new System.Windows.Forms.PictureBox();
+            this.addemployee = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.MainPanel.SuspendLayout();
             this.topHeaderPanel.SuspendLayout();
+            this.LeftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crossPictureBox)).BeginInit();
-            this.LeftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicstureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // MainPanel
             // 
             this.MainPanel.Controls.Add(this.topHeaderPanel);
-            this.MainPanel.Controls.Add(this.loginLabel);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPanel.Location = new System.Drawing.Point(164, 0);
+            this.MainPanel.Location = new System.Drawing.Point(129, 0);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(636, 500);
+            this.MainPanel.Size = new System.Drawing.Size(671, 500);
             this.MainPanel.TabIndex = 6;
             // 
             // topHeaderPanel
@@ -61,8 +62,32 @@
             this.topHeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topHeaderPanel.Location = new System.Drawing.Point(0, 0);
             this.topHeaderPanel.Name = "topHeaderPanel";
-            this.topHeaderPanel.Size = new System.Drawing.Size(636, 64);
+            this.topHeaderPanel.Size = new System.Drawing.Size(671, 64);
             this.topHeaderPanel.TabIndex = 12;
+            // 
+            // LeftPanel
+            // 
+            this.LeftPanel.Controls.Add(this.button3);
+            this.LeftPanel.Controls.Add(this.button2);
+            this.LeftPanel.Controls.Add(this.addemployee);
+            this.LeftPanel.Controls.Add(this.NameSystem);
+            this.LeftPanel.Controls.Add(this.logoPicstureBox);
+            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
+            this.LeftPanel.Name = "LeftPanel";
+            this.LeftPanel.Size = new System.Drawing.Size(129, 500);
+            this.LeftPanel.TabIndex = 5;
+            // 
+            // NameSystem
+            // 
+            this.NameSystem.AutoSize = true;
+            this.NameSystem.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameSystem.ForeColor = System.Drawing.Color.White;
+            this.NameSystem.Location = new System.Drawing.Point(12, 94);
+            this.NameSystem.Name = "NameSystem";
+            this.NameSystem.Size = new System.Drawing.Size(114, 27);
+            this.NameSystem.TabIndex = 3;
+            this.NameSystem.Text = "Akatsuki";
             // 
             // minimizePictureBox
             // 
@@ -84,47 +109,43 @@
             this.crossPictureBox.TabIndex = 4;
             this.crossPictureBox.TabStop = false;
             // 
-            // loginLabel
-            // 
-            this.loginLabel.AutoSize = true;
-            this.loginLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginLabel.ForeColor = System.Drawing.Color.White;
-            this.loginLabel.Location = new System.Drawing.Point(190, 17);
-            this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(82, 31);
-            this.loginLabel.TabIndex = 0;
-            this.loginLabel.Text = "Login";
-            // 
-            // LeftPanel
-            // 
-            this.LeftPanel.Controls.Add(this.NameSystem);
-            this.LeftPanel.Controls.Add(this.logoPicstureBox);
-            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
-            this.LeftPanel.Name = "LeftPanel";
-            this.LeftPanel.Size = new System.Drawing.Size(164, 500);
-            this.LeftPanel.TabIndex = 5;
-            // 
-            // NameSystem
-            // 
-            this.NameSystem.AutoSize = true;
-            this.NameSystem.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameSystem.ForeColor = System.Drawing.Color.White;
-            this.NameSystem.Location = new System.Drawing.Point(22, 97);
-            this.NameSystem.Name = "NameSystem";
-            this.NameSystem.Size = new System.Drawing.Size(114, 27);
-            this.NameSystem.TabIndex = 3;
-            this.NameSystem.Text = "Akatsuki";
-            // 
             // logoPicstureBox
             // 
             this.logoPicstureBox.Image = global::PayrollManagmentSystem.Properties.Resources._44c500d63004afab3b23ca608fc760ea;
-            this.logoPicstureBox.Location = new System.Drawing.Point(27, 12);
+            this.logoPicstureBox.Location = new System.Drawing.Point(12, 12);
             this.logoPicstureBox.Name = "logoPicstureBox";
-            this.logoPicstureBox.Size = new System.Drawing.Size(102, 75);
+            this.logoPicstureBox.Size = new System.Drawing.Size(102, 67);
             this.logoPicstureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logoPicstureBox.TabIndex = 2;
             this.logoPicstureBox.TabStop = false;
+            // 
+            // addemployee
+            // 
+            this.addemployee.Location = new System.Drawing.Point(17, 221);
+            this.addemployee.Name = "addemployee";
+            this.addemployee.Size = new System.Drawing.Size(106, 23);
+            this.addemployee.TabIndex = 13;
+            this.addemployee.Text = "Add Employee";
+            this.addemployee.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(17, 169);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 23);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Search Employee";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(17, 276);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(106, 23);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Remove Employee";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // AdminForm
             // 
@@ -138,12 +159,11 @@
             this.Name = "AdminForm";
             this.Text = "AdminForm";
             this.MainPanel.ResumeLayout(false);
-            this.MainPanel.PerformLayout();
             this.topHeaderPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.minimizePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crossPictureBox)).EndInit();
             this.LeftPanel.ResumeLayout(false);
             this.LeftPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minimizePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crossPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicstureBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -155,9 +175,11 @@
         private System.Windows.Forms.Panel topHeaderPanel;
         private System.Windows.Forms.PictureBox minimizePictureBox;
         private System.Windows.Forms.PictureBox crossPictureBox;
-        private System.Windows.Forms.Label loginLabel;
         private System.Windows.Forms.Panel LeftPanel;
         private System.Windows.Forms.Label NameSystem;
         private System.Windows.Forms.PictureBox logoPicstureBox;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button addemployee;
     }
 }

@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addemployee.Designer.cs">
+      <DependentUpon>addemployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="removeemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeemployee.Designer.cs">
+      <DependentUpon>removeemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchemployee.Designer.cs">
+      <DependentUpon>searchemployee.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addemployee.resx">
+      <DependentUpon>addemployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +107,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="removeemployee.resx">
+      <DependentUpon>removeemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchemployee.resx">
+      <DependentUpon>searchemployee.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -141,6 +141,8 @@ namespace PayrollManagmentSystem
                     {
                         // Admin Form Show
                         MessageBox.Show("Here");
+                        AdminForm admin = new AdminForm();
+                        admin.Show();
                     }
                     else
                     {
