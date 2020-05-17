@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace PayrollManagmentSystem
 {
-    public partial class searchemployee : Form
+    public partial class jobinfoemployee : Form
     {
-        public searchemployee()
+        public jobinfoemployee()
         {
             InitializeComponent();
         }
 
-        private void returntoadminoanelpersonalinfoButton_Click(object sender, EventArgs e)
+        private void returntoaddemployeeJOBbutton_Click(object sender, EventArgs e)
         {
-            adminpanel admin = new adminpanel();
-            admin.Show();
+            addemployee add = new addemployee();
+            add.Show();
         }
 
         private void minimizePictureBox_Click(object sender, EventArgs e)

@@ -16,5 +16,21 @@ namespace PayrollManagmentSystem
         {
             InitializeComponent();
         }
+
+        private void returntoadminoanelpersonalinfoButton_Click(object sender, EventArgs e)
+        {
+            adminpanel admin = new adminpanel();
+            admin.Show();
+        }
+
+        private void minimizePictureBox_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void crossPictureBox_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

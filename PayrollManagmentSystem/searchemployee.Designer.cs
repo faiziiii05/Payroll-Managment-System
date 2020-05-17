@@ -29,58 +29,127 @@
         private void InitializeComponent()
         {
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.searchbutton = new System.Windows.Forms.Button();
+            this.ErrorLabel = new System.Windows.Forms.Label();
+            this.passwordPanelLine = new System.Windows.Forms.Panel();
+            this.idSEARCHemployeeTextBox = new System.Windows.Forms.TextBox();
+            this.usernamePanelaLine = new System.Windows.Forms.Panel();
+            this.nameSEARCHemployeeTextBox = new System.Windows.Forms.TextBox();
             this.topHeaderPanel = new System.Windows.Forms.Panel();
             this.loginLabel = new System.Windows.Forms.Label();
             this.LeftPanel = new System.Windows.Forms.Panel();
             this.NameSystem = new System.Windows.Forms.Label();
+            this.SEARCHemployeetextbox = new System.Windows.Forms.TextBox();
+            this.returntoadminoanelpersonalinfoButton = new System.Windows.Forms.Button();
+            this.passwordPictureBox = new System.Windows.Forms.PictureBox();
+            this.userPictureBox = new System.Windows.Forms.PictureBox();
             this.minimizePictureBox = new System.Windows.Forms.PictureBox();
             this.crossPictureBox = new System.Windows.Forms.PictureBox();
             this.logoPicstureBox = new System.Windows.Forms.PictureBox();
-            this.loginBtn = new System.Windows.Forms.Button();
-            this.ErrorLabel = new System.Windows.Forms.Label();
-            this.passwordPanelLine = new System.Windows.Forms.Panel();
-            this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.usernamePanelaLine = new System.Windows.Forms.Panel();
-            this.passwordPictureBox = new System.Windows.Forms.PictureBox();
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
-            this.userPictureBox = new System.Windows.Forms.PictureBox();
             this.MainPanel.SuspendLayout();
             this.topHeaderPanel.SuspendLayout();
             this.LeftPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.passwordPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crossPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicstureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.passwordPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
-            this.MainPanel.Controls.Add(this.loginBtn);
+            this.MainPanel.Controls.Add(this.returntoadminoanelpersonalinfoButton);
+            this.MainPanel.Controls.Add(this.searchbutton);
             this.MainPanel.Controls.Add(this.ErrorLabel);
             this.MainPanel.Controls.Add(this.passwordPanelLine);
-            this.MainPanel.Controls.Add(this.passwordTextBox);
+            this.MainPanel.Controls.Add(this.idSEARCHemployeeTextBox);
             this.MainPanel.Controls.Add(this.usernamePanelaLine);
             this.MainPanel.Controls.Add(this.passwordPictureBox);
-            this.MainPanel.Controls.Add(this.usernameTextBox);
+            this.MainPanel.Controls.Add(this.nameSEARCHemployeeTextBox);
             this.MainPanel.Controls.Add(this.userPictureBox);
             this.MainPanel.Controls.Add(this.topHeaderPanel);
             this.MainPanel.Controls.Add(this.loginLabel);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPanel.Location = new System.Drawing.Point(129, 0);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(671, 450);
+            this.MainPanel.Size = new System.Drawing.Size(451, 450);
             this.MainPanel.TabIndex = 8;
+            // 
+            // searchbutton
+            // 
+            this.searchbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchbutton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchbutton.ForeColor = System.Drawing.Color.White;
+            this.searchbutton.Location = new System.Drawing.Point(65, 297);
+            this.searchbutton.Name = "searchbutton";
+            this.searchbutton.Size = new System.Drawing.Size(115, 37);
+            this.searchbutton.TabIndex = 25;
+            this.searchbutton.Text = "Search";
+            this.searchbutton.UseVisualStyleBackColor = false;
+            // 
+            // ErrorLabel
+            // 
+            this.ErrorLabel.AutoSize = true;
+            this.ErrorLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ErrorLabel.ForeColor = System.Drawing.Color.Red;
+            this.ErrorLabel.Location = new System.Drawing.Point(68, 249);
+            this.ErrorLabel.Name = "ErrorLabel";
+            this.ErrorLabel.Size = new System.Drawing.Size(112, 31);
+            this.ErrorLabel.TabIndex = 24;
+            this.ErrorLabel.Text = "Message:";
+            // 
+            // passwordPanelLine
+            // 
+            this.passwordPanelLine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.passwordPanelLine.ForeColor = System.Drawing.Color.White;
+            this.passwordPanelLine.Location = new System.Drawing.Point(74, 217);
+            this.passwordPanelLine.Name = "passwordPanelLine";
+            this.passwordPanelLine.Size = new System.Drawing.Size(359, 2);
+            this.passwordPanelLine.TabIndex = 20;
+            // 
+            // idSEARCHemployeeTextBox
+            // 
+            this.idSEARCHemployeeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.idSEARCHemployeeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.idSEARCHemployeeTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idSEARCHemployeeTextBox.ForeColor = System.Drawing.Color.White;
+            this.idSEARCHemployeeTextBox.Location = new System.Drawing.Point(125, 183);
+            this.idSEARCHemployeeTextBox.Name = "idSEARCHemployeeTextBox";
+            this.idSEARCHemployeeTextBox.Size = new System.Drawing.Size(309, 25);
+            this.idSEARCHemployeeTextBox.TabIndex = 19;
+            this.idSEARCHemployeeTextBox.Text = "Employee ID";
+            // 
+            // usernamePanelaLine
+            // 
+            this.usernamePanelaLine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.usernamePanelaLine.ForeColor = System.Drawing.Color.White;
+            this.usernamePanelaLine.Location = new System.Drawing.Point(74, 125);
+            this.usernamePanelaLine.Name = "usernamePanelaLine";
+            this.usernamePanelaLine.Size = new System.Drawing.Size(359, 2);
+            this.usernamePanelaLine.TabIndex = 17;
+            // 
+            // nameSEARCHemployeeTextBox
+            // 
+            this.nameSEARCHemployeeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.nameSEARCHemployeeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nameSEARCHemployeeTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameSEARCHemployeeTextBox.ForeColor = System.Drawing.Color.White;
+            this.nameSEARCHemployeeTextBox.Location = new System.Drawing.Point(125, 94);
+            this.nameSEARCHemployeeTextBox.Name = "nameSEARCHemployeeTextBox";
+            this.nameSEARCHemployeeTextBox.Size = new System.Drawing.Size(309, 25);
+            this.nameSEARCHemployeeTextBox.TabIndex = 16;
+            this.nameSEARCHemployeeTextBox.Text = "Employee Name";
             // 
             // topHeaderPanel
             // 
+            this.topHeaderPanel.Controls.Add(this.SEARCHemployeetextbox);
             this.topHeaderPanel.Controls.Add(this.minimizePictureBox);
             this.topHeaderPanel.Controls.Add(this.crossPictureBox);
             this.topHeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topHeaderPanel.Location = new System.Drawing.Point(0, 0);
             this.topHeaderPanel.Name = "topHeaderPanel";
-            this.topHeaderPanel.Size = new System.Drawing.Size(671, 64);
+            this.topHeaderPanel.Size = new System.Drawing.Size(451, 64);
             this.topHeaderPanel.TabIndex = 12;
             // 
             // loginLabel
@@ -116,88 +185,30 @@
             this.NameSystem.TabIndex = 3;
             this.NameSystem.Text = "Akatsuki";
             // 
-            // minimizePictureBox
+            // SEARCHemployeetextbox
             // 
-            this.minimizePictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.minimize;
-            this.minimizePictureBox.Location = new System.Drawing.Point(563, 3);
-            this.minimizePictureBox.Name = "minimizePictureBox";
-            this.minimizePictureBox.Size = new System.Drawing.Size(32, 29);
-            this.minimizePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.minimizePictureBox.TabIndex = 5;
-            this.minimizePictureBox.TabStop = false;
+            this.SEARCHemployeetextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.SEARCHemployeetextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SEARCHemployeetextbox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SEARCHemployeetextbox.ForeColor = System.Drawing.Color.White;
+            this.SEARCHemployeetextbox.Location = new System.Drawing.Point(6, 17);
+            this.SEARCHemployeetextbox.Name = "SEARCHemployeetextbox";
+            this.SEARCHemployeetextbox.Size = new System.Drawing.Size(309, 25);
+            this.SEARCHemployeetextbox.TabIndex = 17;
+            this.SEARCHemployeetextbox.Text = "Search Employee";
             // 
-            // crossPictureBox
+            // returntoadminoanelpersonalinfoButton
             // 
-            this.crossPictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.cross;
-            this.crossPictureBox.Location = new System.Drawing.Point(601, 3);
-            this.crossPictureBox.Name = "crossPictureBox";
-            this.crossPictureBox.Size = new System.Drawing.Size(32, 29);
-            this.crossPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.crossPictureBox.TabIndex = 4;
-            this.crossPictureBox.TabStop = false;
-            // 
-            // logoPicstureBox
-            // 
-            this.logoPicstureBox.Image = global::PayrollManagmentSystem.Properties.Resources._44c500d63004afab3b23ca608fc760ea;
-            this.logoPicstureBox.Location = new System.Drawing.Point(12, 12);
-            this.logoPicstureBox.Name = "logoPicstureBox";
-            this.logoPicstureBox.Size = new System.Drawing.Size(102, 67);
-            this.logoPicstureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logoPicstureBox.TabIndex = 2;
-            this.logoPicstureBox.TabStop = false;
-            // 
-            // loginBtn
-            // 
-            this.loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginBtn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginBtn.ForeColor = System.Drawing.Color.White;
-            this.loginBtn.Location = new System.Drawing.Point(65, 297);
-            this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(359, 37);
-            this.loginBtn.TabIndex = 25;
-            this.loginBtn.Text = "Search";
-            this.loginBtn.UseVisualStyleBackColor = false;
-            // 
-            // ErrorLabel
-            // 
-            this.ErrorLabel.AutoSize = true;
-            this.ErrorLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ErrorLabel.ForeColor = System.Drawing.Color.Red;
-            this.ErrorLabel.Location = new System.Drawing.Point(68, 249);
-            this.ErrorLabel.Name = "ErrorLabel";
-            this.ErrorLabel.Size = new System.Drawing.Size(112, 31);
-            this.ErrorLabel.TabIndex = 24;
-            this.ErrorLabel.Text = "Message:";
-            // 
-            // passwordPanelLine
-            // 
-            this.passwordPanelLine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.passwordPanelLine.ForeColor = System.Drawing.Color.White;
-            this.passwordPanelLine.Location = new System.Drawing.Point(74, 217);
-            this.passwordPanelLine.Name = "passwordPanelLine";
-            this.passwordPanelLine.Size = new System.Drawing.Size(359, 2);
-            this.passwordPanelLine.TabIndex = 20;
-            // 
-            // passwordTextBox
-            // 
-            this.passwordTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
-            this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTextBox.ForeColor = System.Drawing.Color.White;
-            this.passwordTextBox.Location = new System.Drawing.Point(125, 183);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(309, 25);
-            this.passwordTextBox.TabIndex = 19;
-            this.passwordTextBox.Text = "Employee ID";
-            // 
-            // usernamePanelaLine
-            // 
-            this.usernamePanelaLine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.usernamePanelaLine.ForeColor = System.Drawing.Color.White;
-            this.usernamePanelaLine.Location = new System.Drawing.Point(74, 125);
-            this.usernamePanelaLine.Name = "usernamePanelaLine";
-            this.usernamePanelaLine.Size = new System.Drawing.Size(359, 2);
-            this.usernamePanelaLine.TabIndex = 17;
+            this.returntoadminoanelpersonalinfoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.returntoadminoanelpersonalinfoButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returntoadminoanelpersonalinfoButton.ForeColor = System.Drawing.Color.White;
+            this.returntoadminoanelpersonalinfoButton.Location = new System.Drawing.Point(186, 297);
+            this.returntoadminoanelpersonalinfoButton.Name = "returntoadminoanelpersonalinfoButton";
+            this.returntoadminoanelpersonalinfoButton.Size = new System.Drawing.Size(248, 37);
+            this.returntoadminoanelpersonalinfoButton.TabIndex = 34;
+            this.returntoadminoanelpersonalinfoButton.Text = "Return To Admin Panel";
+            this.returntoadminoanelpersonalinfoButton.UseVisualStyleBackColor = false;
+            this.returntoadminoanelpersonalinfoButton.Click += new System.EventHandler(this.returntoadminoanelpersonalinfoButton_Click);
             // 
             // passwordPictureBox
             // 
@@ -209,18 +220,6 @@
             this.passwordPictureBox.TabIndex = 18;
             this.passwordPictureBox.TabStop = false;
             // 
-            // usernameTextBox
-            // 
-            this.usernameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
-            this.usernameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.usernameTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameTextBox.ForeColor = System.Drawing.Color.White;
-            this.usernameTextBox.Location = new System.Drawing.Point(125, 94);
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(309, 25);
-            this.usernameTextBox.TabIndex = 16;
-            this.usernameTextBox.Text = "Employee Name";
-            // 
             // userPictureBox
             // 
             this.userPictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.user;
@@ -231,11 +230,43 @@
             this.userPictureBox.TabIndex = 15;
             this.userPictureBox.TabStop = false;
             // 
+            // minimizePictureBox
+            // 
+            this.minimizePictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.minimize;
+            this.minimizePictureBox.Location = new System.Drawing.Point(364, 12);
+            this.minimizePictureBox.Name = "minimizePictureBox";
+            this.minimizePictureBox.Size = new System.Drawing.Size(32, 29);
+            this.minimizePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.minimizePictureBox.TabIndex = 5;
+            this.minimizePictureBox.TabStop = false;
+            this.minimizePictureBox.Click += new System.EventHandler(this.minimizePictureBox_Click);
+            // 
+            // crossPictureBox
+            // 
+            this.crossPictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.cross;
+            this.crossPictureBox.Location = new System.Drawing.Point(402, 12);
+            this.crossPictureBox.Name = "crossPictureBox";
+            this.crossPictureBox.Size = new System.Drawing.Size(32, 29);
+            this.crossPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.crossPictureBox.TabIndex = 4;
+            this.crossPictureBox.TabStop = false;
+            this.crossPictureBox.Click += new System.EventHandler(this.crossPictureBox_Click);
+            // 
+            // logoPicstureBox
+            // 
+            this.logoPicstureBox.Image = global::PayrollManagmentSystem.Properties.Resources._44c500d63004afab3b23ca608fc760ea;
+            this.logoPicstureBox.Location = new System.Drawing.Point(12, 12);
+            this.logoPicstureBox.Name = "logoPicstureBox";
+            this.logoPicstureBox.Size = new System.Drawing.Size(102, 67);
+            this.logoPicstureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoPicstureBox.TabIndex = 2;
+            this.logoPicstureBox.TabStop = false;
+            // 
             // searchemployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(580, 450);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.LeftPanel);
             this.Name = "searchemployee";
@@ -243,13 +274,14 @@
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
             this.topHeaderPanel.ResumeLayout(false);
+            this.topHeaderPanel.PerformLayout();
             this.LeftPanel.ResumeLayout(false);
             this.LeftPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.passwordPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crossPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicstureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.passwordPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -264,13 +296,15 @@
         private System.Windows.Forms.Panel LeftPanel;
         private System.Windows.Forms.Label NameSystem;
         private System.Windows.Forms.PictureBox logoPicstureBox;
-        private System.Windows.Forms.Button loginBtn;
+        private System.Windows.Forms.Button searchbutton;
         private System.Windows.Forms.Label ErrorLabel;
         private System.Windows.Forms.Panel passwordPanelLine;
-        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.TextBox idSEARCHemployeeTextBox;
         private System.Windows.Forms.Panel usernamePanelaLine;
         private System.Windows.Forms.PictureBox passwordPictureBox;
-        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.TextBox nameSEARCHemployeeTextBox;
         private System.Windows.Forms.PictureBox userPictureBox;
+        private System.Windows.Forms.TextBox SEARCHemployeetextbox;
+        private System.Windows.Forms.Button returntoadminoanelpersonalinfoButton;
     }
 }

@@ -29,16 +29,18 @@
         private void InitializeComponent()
         {
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.loginBtn = new System.Windows.Forms.Button();
+            this.removeeployeeButton = new System.Windows.Forms.Button();
             this.ErrorLabel = new System.Windows.Forms.Label();
             this.passwordPanelLine = new System.Windows.Forms.Panel();
-            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.idREMOVEemployeeTextBox = new System.Windows.Forms.TextBox();
             this.usernamePanelaLine = new System.Windows.Forms.Panel();
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.nameREMOVEemployeeTextBox = new System.Windows.Forms.TextBox();
             this.topHeaderPanel = new System.Windows.Forms.Panel();
             this.loginLabel = new System.Windows.Forms.Label();
             this.LeftPanel = new System.Windows.Forms.Panel();
             this.NameSystem = new System.Windows.Forms.Label();
+            this.REMOVEemployeetextbox = new System.Windows.Forms.TextBox();
+            this.returntoadminoanelpersonalinfoButton = new System.Windows.Forms.Button();
             this.passwordPictureBox = new System.Windows.Forms.PictureBox();
             this.userPictureBox = new System.Windows.Forms.PictureBox();
             this.minimizePictureBox = new System.Windows.Forms.PictureBox();
@@ -57,33 +59,34 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
-            this.MainPanel.Controls.Add(this.loginBtn);
+            this.MainPanel.Controls.Add(this.returntoadminoanelpersonalinfoButton);
+            this.MainPanel.Controls.Add(this.removeeployeeButton);
             this.MainPanel.Controls.Add(this.ErrorLabel);
             this.MainPanel.Controls.Add(this.passwordPanelLine);
-            this.MainPanel.Controls.Add(this.passwordTextBox);
+            this.MainPanel.Controls.Add(this.idREMOVEemployeeTextBox);
             this.MainPanel.Controls.Add(this.usernamePanelaLine);
             this.MainPanel.Controls.Add(this.passwordPictureBox);
-            this.MainPanel.Controls.Add(this.usernameTextBox);
+            this.MainPanel.Controls.Add(this.nameREMOVEemployeeTextBox);
             this.MainPanel.Controls.Add(this.userPictureBox);
             this.MainPanel.Controls.Add(this.topHeaderPanel);
             this.MainPanel.Controls.Add(this.loginLabel);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPanel.Location = new System.Drawing.Point(129, 0);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(671, 450);
+            this.MainPanel.Size = new System.Drawing.Size(447, 450);
             this.MainPanel.TabIndex = 10;
             // 
-            // loginBtn
+            // removeeployeeButton
             // 
-            this.loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginBtn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginBtn.ForeColor = System.Drawing.Color.White;
-            this.loginBtn.Location = new System.Drawing.Point(65, 297);
-            this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(359, 37);
-            this.loginBtn.TabIndex = 25;
-            this.loginBtn.Text = "Remove";
-            this.loginBtn.UseVisualStyleBackColor = false;
+            this.removeeployeeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.removeeployeeButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeeployeeButton.ForeColor = System.Drawing.Color.White;
+            this.removeeployeeButton.Location = new System.Drawing.Point(65, 297);
+            this.removeeployeeButton.Name = "removeeployeeButton";
+            this.removeeployeeButton.Size = new System.Drawing.Size(115, 37);
+            this.removeeployeeButton.TabIndex = 25;
+            this.removeeployeeButton.Text = "Remove";
+            this.removeeployeeButton.UseVisualStyleBackColor = false;
             // 
             // ErrorLabel
             // 
@@ -105,17 +108,17 @@
             this.passwordPanelLine.Size = new System.Drawing.Size(359, 2);
             this.passwordPanelLine.TabIndex = 20;
             // 
-            // passwordTextBox
+            // idREMOVEemployeeTextBox
             // 
-            this.passwordTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
-            this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTextBox.ForeColor = System.Drawing.Color.White;
-            this.passwordTextBox.Location = new System.Drawing.Point(125, 183);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(309, 25);
-            this.passwordTextBox.TabIndex = 19;
-            this.passwordTextBox.Text = "Employee ID";
+            this.idREMOVEemployeeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.idREMOVEemployeeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.idREMOVEemployeeTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idREMOVEemployeeTextBox.ForeColor = System.Drawing.Color.White;
+            this.idREMOVEemployeeTextBox.Location = new System.Drawing.Point(125, 183);
+            this.idREMOVEemployeeTextBox.Name = "idREMOVEemployeeTextBox";
+            this.idREMOVEemployeeTextBox.Size = new System.Drawing.Size(309, 25);
+            this.idREMOVEemployeeTextBox.TabIndex = 19;
+            this.idREMOVEemployeeTextBox.Text = "Employee ID";
             // 
             // usernamePanelaLine
             // 
@@ -126,26 +129,27 @@
             this.usernamePanelaLine.Size = new System.Drawing.Size(359, 2);
             this.usernamePanelaLine.TabIndex = 17;
             // 
-            // usernameTextBox
+            // nameREMOVEemployeeTextBox
             // 
-            this.usernameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
-            this.usernameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.usernameTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameTextBox.ForeColor = System.Drawing.Color.White;
-            this.usernameTextBox.Location = new System.Drawing.Point(125, 94);
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(309, 25);
-            this.usernameTextBox.TabIndex = 16;
-            this.usernameTextBox.Text = "Employee Name";
+            this.nameREMOVEemployeeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.nameREMOVEemployeeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nameREMOVEemployeeTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameREMOVEemployeeTextBox.ForeColor = System.Drawing.Color.White;
+            this.nameREMOVEemployeeTextBox.Location = new System.Drawing.Point(125, 94);
+            this.nameREMOVEemployeeTextBox.Name = "nameREMOVEemployeeTextBox";
+            this.nameREMOVEemployeeTextBox.Size = new System.Drawing.Size(309, 25);
+            this.nameREMOVEemployeeTextBox.TabIndex = 16;
+            this.nameREMOVEemployeeTextBox.Text = "Employee Name";
             // 
             // topHeaderPanel
             // 
+            this.topHeaderPanel.Controls.Add(this.REMOVEemployeetextbox);
             this.topHeaderPanel.Controls.Add(this.minimizePictureBox);
             this.topHeaderPanel.Controls.Add(this.crossPictureBox);
             this.topHeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topHeaderPanel.Location = new System.Drawing.Point(0, 0);
             this.topHeaderPanel.Name = "topHeaderPanel";
-            this.topHeaderPanel.Size = new System.Drawing.Size(671, 64);
+            this.topHeaderPanel.Size = new System.Drawing.Size(447, 64);
             this.topHeaderPanel.TabIndex = 12;
             // 
             // loginLabel
@@ -181,6 +185,31 @@
             this.NameSystem.TabIndex = 3;
             this.NameSystem.Text = "Akatsuki";
             // 
+            // REMOVEemployeetextbox
+            // 
+            this.REMOVEemployeetextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.REMOVEemployeetextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.REMOVEemployeetextbox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.REMOVEemployeetextbox.ForeColor = System.Drawing.Color.White;
+            this.REMOVEemployeetextbox.Location = new System.Drawing.Point(6, 17);
+            this.REMOVEemployeetextbox.Name = "REMOVEemployeetextbox";
+            this.REMOVEemployeetextbox.Size = new System.Drawing.Size(309, 25);
+            this.REMOVEemployeetextbox.TabIndex = 18;
+            this.REMOVEemployeetextbox.Text = "Remove Employee";
+            // 
+            // returntoadminoanelpersonalinfoButton
+            // 
+            this.returntoadminoanelpersonalinfoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.returntoadminoanelpersonalinfoButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returntoadminoanelpersonalinfoButton.ForeColor = System.Drawing.Color.White;
+            this.returntoadminoanelpersonalinfoButton.Location = new System.Drawing.Point(186, 297);
+            this.returntoadminoanelpersonalinfoButton.Name = "returntoadminoanelpersonalinfoButton";
+            this.returntoadminoanelpersonalinfoButton.Size = new System.Drawing.Size(248, 37);
+            this.returntoadminoanelpersonalinfoButton.TabIndex = 33;
+            this.returntoadminoanelpersonalinfoButton.Text = "Return To Admin Panel";
+            this.returntoadminoanelpersonalinfoButton.UseVisualStyleBackColor = false;
+            this.returntoadminoanelpersonalinfoButton.Click += new System.EventHandler(this.returntoadminoanelpersonalinfoButton_Click);
+            // 
             // passwordPictureBox
             // 
             this.passwordPictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.password;
@@ -204,22 +233,24 @@
             // minimizePictureBox
             // 
             this.minimizePictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.minimize;
-            this.minimizePictureBox.Location = new System.Drawing.Point(563, 3);
+            this.minimizePictureBox.Location = new System.Drawing.Point(364, 12);
             this.minimizePictureBox.Name = "minimizePictureBox";
             this.minimizePictureBox.Size = new System.Drawing.Size(32, 29);
             this.minimizePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.minimizePictureBox.TabIndex = 5;
             this.minimizePictureBox.TabStop = false;
+            this.minimizePictureBox.Click += new System.EventHandler(this.minimizePictureBox_Click);
             // 
             // crossPictureBox
             // 
             this.crossPictureBox.Image = global::PayrollManagmentSystem.Properties.Resources.cross;
-            this.crossPictureBox.Location = new System.Drawing.Point(601, 3);
+            this.crossPictureBox.Location = new System.Drawing.Point(402, 12);
             this.crossPictureBox.Name = "crossPictureBox";
             this.crossPictureBox.Size = new System.Drawing.Size(32, 29);
             this.crossPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.crossPictureBox.TabIndex = 4;
             this.crossPictureBox.TabStop = false;
+            this.crossPictureBox.Click += new System.EventHandler(this.crossPictureBox_Click);
             // 
             // logoPicstureBox
             // 
@@ -235,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(576, 450);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.LeftPanel);
             this.Name = "removeemployee";
@@ -243,6 +274,7 @@
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
             this.topHeaderPanel.ResumeLayout(false);
+            this.topHeaderPanel.PerformLayout();
             this.LeftPanel.ResumeLayout(false);
             this.LeftPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.passwordPictureBox)).EndInit();
@@ -257,13 +289,13 @@
         #endregion
 
         private System.Windows.Forms.Panel MainPanel;
-        private System.Windows.Forms.Button loginBtn;
+        private System.Windows.Forms.Button removeeployeeButton;
         private System.Windows.Forms.Label ErrorLabel;
         private System.Windows.Forms.Panel passwordPanelLine;
-        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.TextBox idREMOVEemployeeTextBox;
         private System.Windows.Forms.Panel usernamePanelaLine;
         private System.Windows.Forms.PictureBox passwordPictureBox;
-        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.TextBox nameREMOVEemployeeTextBox;
         private System.Windows.Forms.PictureBox userPictureBox;
         private System.Windows.Forms.Panel topHeaderPanel;
         private System.Windows.Forms.PictureBox minimizePictureBox;
@@ -272,5 +304,7 @@
         private System.Windows.Forms.Panel LeftPanel;
         private System.Windows.Forms.Label NameSystem;
         private System.Windows.Forms.PictureBox logoPicstureBox;
+        private System.Windows.Forms.TextBox REMOVEemployeetextbox;
+        private System.Windows.Forms.Button returntoadminoanelpersonalinfoButton;
     }
 }

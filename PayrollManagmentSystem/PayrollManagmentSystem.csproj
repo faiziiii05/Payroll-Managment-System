@@ -53,23 +53,35 @@
     <Compile Include="addemployee.Designer.cs">
       <DependentUpon>addemployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminForm.Designer.cs">
-      <DependentUpon>AdminForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="AdminForms\AddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminForms\AddEmployee.Designer.cs">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminpanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminpanel.Designer.cs">
+      <DependentUpon>adminpanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jobinfoemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jobinfoemployee.Designer.cs">
+      <DependentUpon>jobinfoemployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personalinfoemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personalinfoemployee.Designer.cs">
+      <DependentUpon>personalinfoemployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,14 +100,20 @@
     <EmbeddedResource Include="addemployee.resx">
       <DependentUpon>addemployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminForm.resx">
-      <DependentUpon>AdminForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AdminForms\AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="adminpanel.resx">
+      <DependentUpon>adminpanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jobinfoemployee.resx">
+      <DependentUpon>jobinfoemployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personalinfoemployee.resx">
+      <DependentUpon>personalinfoemployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
