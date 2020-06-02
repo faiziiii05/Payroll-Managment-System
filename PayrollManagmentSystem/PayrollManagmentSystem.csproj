@@ -47,73 +47,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addemployee.cs">
+    <Compile Include="AdminForms\addEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="addemployee.Designer.cs">
-      <DependentUpon>addemployee.cs</DependentUpon>
+    <Compile Include="AdminForms\addEmployee.Designer.cs">
+      <DependentUpon>addEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminForms\AddEmployee.cs">
+    <Compile Include="AdminForms\adminDelete.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminForms\AddEmployee.Designer.cs">
-      <DependentUpon>AddEmployee.cs</DependentUpon>
+    <Compile Include="AdminForms\adminDelete.Designer.cs">
+      <DependentUpon>adminDelete.cs</DependentUpon>
     </Compile>
-    <Compile Include="adminpanel.cs">
+    <Compile Include="AdminForms\adminProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="adminpanel.Designer.cs">
-      <DependentUpon>adminpanel.cs</DependentUpon>
+    <Compile Include="AdminForms\adminProfile.Designer.cs">
+      <DependentUpon>adminProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="jobinfoemployee.cs">
+    <Compile Include="adminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="jobinfoemployee.Designer.cs">
-      <DependentUpon>jobinfoemployee.cs</DependentUpon>
+    <Compile Include="adminForm.Designer.cs">
+      <DependentUpon>adminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminForms\adminSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\adminSearch.Designer.cs">
+      <DependentUpon>adminSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="personalinfoemployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="personalinfoemployee.Designer.cs">
-      <DependentUpon>personalinfoemployee.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="removeemployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="removeemployee.Designer.cs">
-      <DependentUpon>removeemployee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="searchemployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="searchemployee.Designer.cs">
-      <DependentUpon>searchemployee.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="addemployee.resx">
-      <DependentUpon>addemployee.cs</DependentUpon>
+    <EmbeddedResource Include="AdminForms\addEmployee.resx">
+      <DependentUpon>addEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminForms\AddEmployee.resx">
-      <DependentUpon>AddEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="AdminForms\adminDelete.resx">
+      <DependentUpon>adminDelete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="adminpanel.resx">
-      <DependentUpon>adminpanel.cs</DependentUpon>
+    <EmbeddedResource Include="AdminForms\adminProfile.resx">
+      <DependentUpon>adminProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="jobinfoemployee.resx">
-      <DependentUpon>jobinfoemployee.cs</DependentUpon>
+    <EmbeddedResource Include="adminForm.resx">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\adminSearch.resx">
+      <DependentUpon>adminSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="personalinfoemployee.resx">
-      <DependentUpon>personalinfoemployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -125,12 +114,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="removeemployee.resx">
-      <DependentUpon>removeemployee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="searchemployee.resx">
-      <DependentUpon>searchemployee.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -161,6 +144,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\44c500d63004afab3b23ca608fc760ea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asddsa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adduser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outsign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removesign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchuser.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
