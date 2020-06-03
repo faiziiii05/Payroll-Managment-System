@@ -100,5 +100,155 @@ namespace PayrollManagmentSystem.AdminForms
                 iderror.SetError(employeeIDTextBox, "ID already exist");
             }
         }
+
+        private void employeeIDTextBox_MouseHover(object sender, EventArgs e)
+        {
+            employeeIDTextBox.Text = "";
+        }
+
+        private void employeeIDTextBox_MouseLeave(object sender, EventArgs e)
+        {
+            if (employeeIDTextBox.Text == "")
+            {
+                employeeIDTextBox.Text = "EmployeeID";
+            }
+        }
+
+        private void employeenameTextBox_MouseHover(object sender, EventArgs e)
+        {
+            employeenameTextBox.Text = "";
+        }
+
+        private void employeenameTextBox_MouseLeave(object sender, EventArgs e)
+        {
+            if (employeenameTextBox.Text == "")
+            {
+                employeenameTextBox.Text = "Employee Name";
+            }
+        }
+
+        private void emailTextBox_MouseHover(object sender, EventArgs e)
+        {
+            emailTextBox.Text = "";
+        }
+
+        private void emailTextBox_MouseLeave(object sender, EventArgs e)
+        {
+            if (emailTextBox.Text == "")
+            {
+                emailTextBox.Text = "Email";
+            }
+        }
+
+        private void contactTextBox_MouseHover(object sender, EventArgs e)
+        {
+            contactTextBox.Text = "";
+        }
+
+        private void contactTextBox_MouseLeave(object sender, EventArgs e)
+        {
+            if(contactTextBox.Text == "")
+            {
+                contactTextBox.Text = "Contact Number";
+            }
+        }
+
+        private void addressTextBox_MouseHover(object sender, EventArgs e)
+        {
+            addressTextBox.Text = "";
+        }
+
+        private void addressTextBox_MouseLeave(object sender, EventArgs e)
+        {
+            if(addressTextBox.Text == "")
+            {
+                addressTextBox.Text = "Address";
+            }
+        }
+
+        private void dobTextBox_MouseHover(object sender, EventArgs e)
+        {
+            dobTextBox.Text = "";
+        }
+
+        private void dobTextBox_MouseLeave(object sender, EventArgs e)
+        {
+            if(dobTextBox.Text == "")
+            {
+                dobTextBox.Text = "Date Of Birth";
+            }
+        }
+
+        private void jobtitleTextBox_MouseHover(object sender, EventArgs e)
+        {
+            jobtitleTextBox.Text = "";
+        }
+
+        private void jobtitleTextBox_MouseLeave(object sender, EventArgs e)
+        {
+            if(jobtitleTextBox.Text == "")
+            {
+                jobtitleTextBox.Text = "Job Title";
+            }
+        }
+
+        private void departmentTextBox_MouseHover(object sender, EventArgs e)
+        {
+            departmentTextBox.Text = "";
+        }
+
+        private void departmentTextBox_MouseLeave(object sender, EventArgs e)
+        {
+            if(departmentTextBox.Text == "")
+            {
+                departmentTextBox.Text = "Department";
+            }
+        }
+
+        private void salaryTextBox_MouseHover(object sender, EventArgs e)
+        {
+            salaryTextBox.Text = "";
+        }
+
+        private void salaryTextBox_MouseLeave(object sender, EventArgs e)
+        {
+            if (salaryTextBox.Text == "")
+            {
+                salaryTextBox.Text = "Salary"; 
+            }
+        }
+
+        private void startdateTextBox_MouseHover(object sender, EventArgs e)
+        {
+            startdateTextBox.Text = "";
+        }
+
+        private void startdateTextBox_MouseLeave(object sender, EventArgs e)
+        {
+            if(startdateTextBox.Text == "")
+            {
+                startdateTextBox.Text = "Joinig Date";
+            }
+        }
+
+        private void savepersonalinfoButton_MouseHover(object sender, EventArgs e)
+        {
+            savepersonalinfoButton.BackColor = Color.Red;
+        }
+
+        private void savepersonalinfoButton_MouseLeave(object sender, EventArgs e)
+        {
+            savepersonalinfoButton.BackColor = Color.DarkSlateGray;
+        }
+
+        private void CancelButton_MouseHover(object sender, EventArgs e)
+        {
+            CancelButton.BackColor = Color.Red;
+        }
+
+        private void CancelButton_MouseLeave(object sender, EventArgs e)
+        {
+            CancelButton.BackColor = Color.DarkSlateGray;
+        }
     }
 }

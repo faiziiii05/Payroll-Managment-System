@@ -364,6 +364,8 @@
             this.searchBtn.Text = "Search";
             this.searchBtn.UseVisualStyleBackColor = false;
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
+            this.searchBtn.MouseLeave += new System.EventHandler(this.searchBtn_MouseLeave);
+            this.searchBtn.MouseHover += new System.EventHandler(this.searchBtn_MouseHover);
             // 
             // panel2
             // 
@@ -409,7 +411,7 @@
             // 
             // employeeIDTextBox
             // 
-            this.employeeIDTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.employeeIDTextBox.BackColor = System.Drawing.Color.DarkSlateGray;
             this.employeeIDTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.employeeIDTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employeeIDTextBox.ForeColor = System.Drawing.Color.White;
@@ -418,11 +420,14 @@
             this.employeeIDTextBox.Size = new System.Drawing.Size(219, 25);
             this.employeeIDTextBox.TabIndex = 53;
             this.employeeIDTextBox.Text = "Employee ID";
+            this.employeeIDTextBox.MouseLeave += new System.EventHandler(this.employeeIDTextBox_MouseLeave);
+            this.employeeIDTextBox.MouseHover += new System.EventHandler(this.employeeIDTextBox_MouseHover);
             this.employeeIDTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.employeeIDTextBox_Validating);
             this.employeeIDTextBox.Validated += new System.EventHandler(this.employeeIDTextBox_Validated);
             // 
             // mainPanel
             // 
+            this.mainPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.mainPanel.Controls.Add(this.delBtn);
             this.mainPanel.Controls.Add(this.jobLabel);
             this.mainPanel.Controls.Add(this.label15);

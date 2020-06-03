@@ -61,6 +61,7 @@
             // 
             // mainPanel
             // 
+            this.mainPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.mainPanel.Controls.Add(this.panel5);
             this.mainPanel.Controls.Add(this.salaryTextBox);
             this.mainPanel.Controls.Add(this.panel6);
@@ -102,7 +103,7 @@
             // 
             // salaryTextBox
             // 
-            this.salaryTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.salaryTextBox.BackColor = System.Drawing.Color.DarkSlateGray;
             this.salaryTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.salaryTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salaryTextBox.ForeColor = System.Drawing.Color.White;
@@ -111,6 +112,8 @@
             this.salaryTextBox.Size = new System.Drawing.Size(219, 25);
             this.salaryTextBox.TabIndex = 75;
             this.salaryTextBox.Text = "Salary";
+            this.salaryTextBox.MouseLeave += new System.EventHandler(this.salaryTextBox_MouseLeave);
+            this.salaryTextBox.MouseHover += new System.EventHandler(this.salaryTextBox_MouseHover);
             // 
             // panel6
             // 
@@ -123,7 +126,7 @@
             // 
             // startdateTextBox
             // 
-            this.startdateTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.startdateTextBox.BackColor = System.Drawing.Color.DarkSlateGray;
             this.startdateTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.startdateTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startdateTextBox.ForeColor = System.Drawing.Color.White;
@@ -132,6 +135,8 @@
             this.startdateTextBox.Size = new System.Drawing.Size(219, 25);
             this.startdateTextBox.TabIndex = 73;
             this.startdateTextBox.Text = "Joining Date";
+            this.startdateTextBox.MouseLeave += new System.EventHandler(this.startdateTextBox_MouseLeave);
+            this.startdateTextBox.MouseHover += new System.EventHandler(this.startdateTextBox_MouseHover);
             // 
             // panel8
             // 
@@ -144,7 +149,7 @@
             // 
             // departmentTextBox
             // 
-            this.departmentTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.departmentTextBox.BackColor = System.Drawing.Color.DarkSlateGray;
             this.departmentTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.departmentTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.departmentTextBox.ForeColor = System.Drawing.Color.White;
@@ -153,6 +158,8 @@
             this.departmentTextBox.Size = new System.Drawing.Size(219, 25);
             this.departmentTextBox.TabIndex = 71;
             this.departmentTextBox.Text = "Department";
+            this.departmentTextBox.MouseLeave += new System.EventHandler(this.departmentTextBox_MouseLeave);
+            this.departmentTextBox.MouseHover += new System.EventHandler(this.departmentTextBox_MouseHover);
             // 
             // panel9
             // 
@@ -165,7 +172,7 @@
             // 
             // jobtitleTextBox
             // 
-            this.jobtitleTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.jobtitleTextBox.BackColor = System.Drawing.Color.DarkSlateGray;
             this.jobtitleTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.jobtitleTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jobtitleTextBox.ForeColor = System.Drawing.Color.White;
@@ -174,6 +181,8 @@
             this.jobtitleTextBox.Size = new System.Drawing.Size(219, 25);
             this.jobtitleTextBox.TabIndex = 69;
             this.jobtitleTextBox.Text = "Job title";
+            this.jobtitleTextBox.MouseLeave += new System.EventHandler(this.jobtitleTextBox_MouseLeave);
+            this.jobtitleTextBox.MouseHover += new System.EventHandler(this.jobtitleTextBox_MouseHover);
             // 
             // ErrorLabel
             // 
@@ -198,6 +207,8 @@
             this.CancelButton.Text = "CANCEL";
             this.CancelButton.UseVisualStyleBackColor = false;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            this.CancelButton.MouseLeave += new System.EventHandler(this.CancelButton_MouseLeave);
+            this.CancelButton.MouseHover += new System.EventHandler(this.CancelButton_MouseHover);
             // 
             // savepersonalinfoButton
             // 
@@ -211,6 +222,8 @@
             this.savepersonalinfoButton.Text = "Save";
             this.savepersonalinfoButton.UseVisualStyleBackColor = false;
             this.savepersonalinfoButton.Click += new System.EventHandler(this.savepersonalinfoButton_Click);
+            this.savepersonalinfoButton.MouseLeave += new System.EventHandler(this.savepersonalinfoButton_MouseLeave);
+            this.savepersonalinfoButton.MouseHover += new System.EventHandler(this.savepersonalinfoButton_MouseHover);
             // 
             // panel3
             // 
@@ -223,7 +236,7 @@
             // 
             // dobTextBox
             // 
-            this.dobTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.dobTextBox.BackColor = System.Drawing.Color.DarkSlateGray;
             this.dobTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dobTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dobTextBox.ForeColor = System.Drawing.Color.White;
@@ -232,6 +245,8 @@
             this.dobTextBox.Size = new System.Drawing.Size(219, 25);
             this.dobTextBox.TabIndex = 64;
             this.dobTextBox.Text = "Date Of Birth";
+            this.dobTextBox.MouseLeave += new System.EventHandler(this.dobTextBox_MouseLeave);
+            this.dobTextBox.MouseHover += new System.EventHandler(this.dobTextBox_MouseHover);
             // 
             // panel2
             // 
@@ -244,7 +259,7 @@
             // 
             // addressTextBox
             // 
-            this.addressTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.addressTextBox.BackColor = System.Drawing.Color.DarkSlateGray;
             this.addressTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.addressTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addressTextBox.ForeColor = System.Drawing.Color.White;
@@ -253,6 +268,8 @@
             this.addressTextBox.Size = new System.Drawing.Size(219, 25);
             this.addressTextBox.TabIndex = 62;
             this.addressTextBox.Text = "Address";
+            this.addressTextBox.MouseLeave += new System.EventHandler(this.addressTextBox_MouseLeave);
+            this.addressTextBox.MouseHover += new System.EventHandler(this.addressTextBox_MouseHover);
             // 
             // panel1
             // 
@@ -265,7 +282,7 @@
             // 
             // contactTextBox
             // 
-            this.contactTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.contactTextBox.BackColor = System.Drawing.Color.DarkSlateGray;
             this.contactTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.contactTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactTextBox.ForeColor = System.Drawing.Color.White;
@@ -274,6 +291,8 @@
             this.contactTextBox.Size = new System.Drawing.Size(219, 25);
             this.contactTextBox.TabIndex = 60;
             this.contactTextBox.Text = "Contact Number";
+            this.contactTextBox.MouseLeave += new System.EventHandler(this.contactTextBox_MouseLeave);
+            this.contactTextBox.MouseHover += new System.EventHandler(this.contactTextBox_MouseHover);
             // 
             // panel4
             // 
@@ -286,7 +305,7 @@
             // 
             // emailTextBox
             // 
-            this.emailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.emailTextBox.BackColor = System.Drawing.Color.DarkSlateGray;
             this.emailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.emailTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailTextBox.ForeColor = System.Drawing.Color.White;
@@ -295,6 +314,8 @@
             this.emailTextBox.Size = new System.Drawing.Size(219, 25);
             this.emailTextBox.TabIndex = 58;
             this.emailTextBox.Text = "Email";
+            this.emailTextBox.MouseLeave += new System.EventHandler(this.emailTextBox_MouseLeave);
+            this.emailTextBox.MouseHover += new System.EventHandler(this.emailTextBox_MouseHover);
             // 
             // addEmployeeLabel
             // 
@@ -318,7 +339,7 @@
             // 
             // employeenameTextBox
             // 
-            this.employeenameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.employeenameTextBox.BackColor = System.Drawing.Color.DarkSlateGray;
             this.employeenameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.employeenameTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employeenameTextBox.ForeColor = System.Drawing.Color.White;
@@ -327,6 +348,8 @@
             this.employeenameTextBox.Size = new System.Drawing.Size(219, 25);
             this.employeenameTextBox.TabIndex = 55;
             this.employeenameTextBox.Text = "Employee Name";
+            this.employeenameTextBox.MouseLeave += new System.EventHandler(this.employeenameTextBox_MouseLeave);
+            this.employeenameTextBox.MouseHover += new System.EventHandler(this.employeenameTextBox_MouseHover);
             // 
             // passwordPanelLine
             // 
@@ -339,7 +362,7 @@
             // 
             // employeeIDTextBox
             // 
-            this.employeeIDTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(85)))), ((int)(((byte)(92)))));
+            this.employeeIDTextBox.BackColor = System.Drawing.Color.DarkSlateGray;
             this.employeeIDTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.employeeIDTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employeeIDTextBox.ForeColor = System.Drawing.Color.White;
@@ -348,6 +371,8 @@
             this.employeeIDTextBox.Size = new System.Drawing.Size(219, 25);
             this.employeeIDTextBox.TabIndex = 53;
             this.employeeIDTextBox.Text = "Employee ID";
+            this.employeeIDTextBox.MouseLeave += new System.EventHandler(this.employeeIDTextBox_MouseLeave);
+            this.employeeIDTextBox.MouseHover += new System.EventHandler(this.employeeIDTextBox_MouseHover);
             this.employeeIDTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.employeeIDTextBox_Validating);
             this.employeeIDTextBox.Validated += new System.EventHandler(this.employeeIDTextBox_Validated);
             // 

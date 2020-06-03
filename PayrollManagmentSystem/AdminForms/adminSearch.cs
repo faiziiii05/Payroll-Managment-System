@@ -133,5 +133,28 @@ namespace PayrollManagmentSystem.AdminForms
                 msg.Show();
             }
         }
+
+        private void employeeIDTextBox_MouseHover(object sender, EventArgs e)
+        {
+            employeeIDTextBox.Text = "";
+        }
+
+        private void employeeIDTextBox_MouseLeave(object sender, EventArgs e)
+        {
+            if(employeeIDTextBox.Text == "")
+            {
+                employeeIDTextBox.Text = "Employee ID";
+            }
+        }
+
+        private void searchBtn_MouseHover(object sender, EventArgs e)
+        {
+            searchBtn.BackColor = Color.Red;
+        }
+
+        private void searchBtn_MouseLeave(object sender, EventArgs e)
+        {
+            searchBtn.BackColor = Color.DarkSlateGray;
+        }
     }
 }
