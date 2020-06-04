@@ -62,7 +62,7 @@ namespace PayrollManagmentSystem
         // Validate id existance 
         public bool validateID(string id)
         {
-            string q = "SELECT * FROM `employeedata` WHERE idemployeedata=\'" + id+ "\';";
+            string q = "SELECT `idemployeedata` FROM `employeedata` WHERE idemployeedata=\'" + id+ "\';";
 
             try
             {
@@ -70,15 +70,18 @@ namespace PayrollManagmentSystem
                 da = new MySqlDataAdapter(q, connection);
                 ds = new DataSet();
                 da.Fill(ds);
-                if (ds.Tables[0].Rows.Count== 1)
+                if (ds.Tables[0].Rows.Count == 1)
                 {
                     connection.Close();
                     return true;
                 }
                 else
+                {
+                    connection.Close();
                     return false;
+                }
             }
-            catch(Exception)
+            catch (Exception)
             {
                 connection.Close();
                 return false;
@@ -92,38 +95,20 @@ namespace PayrollManagmentSystem
            string emEmail, string emCon, string emAd,string emDOB,
             string emJob, string emDep, string emSal, string emDate)
         {
-            string q = "INSERT INTO `employeedata`( " +
-               "`idemployeedata`, " +
-               "`emname`, " +
-               "`ememail`, " +
-               "`emcontact`, " +
-               "`emadress`, " +
-               "`emdob`, " +
-               "`emjob`, " +
-               "`emdepartment`, " +
-               "`emsalary`, " +
-               "`emdate`) VALUES (\'" +
-               emID + "\',\'" +
-              emName + "\',\'" +
-               emEmail + "\',\'" +
-                emCon + "\',\'" +
-              emAd + "\',\'" +
-               emDOB+ "\',\'" +
-               emJob+ "\',\'" +
-               emDep+ "\',\'" +
-               emSal + "\',\'" +
-               emDate + "\')";
-
+            string value = "\'" + emID + "\',\'" + emName + "\',\'" + emEmail+ "\',\'" + emCon + "\',\'" + emAd + "\',\'" + emDOB + "\',\'" + emJob + "\',\'" + emDep + "\',\'" + emSal + "\',\'" + emDate + "\'";
+            string qu = "INSERT INTO `payrollmanagmentsystem`.`employeedata` (`idemployeedata`, `emname`, `ememail`, `emcontact`, `emadress`, `emdob`, `emjob`, `emdepartment`, `emsalary`, `emdate`) VALUES ("+value+");";
             try
             {
                 connection.Open();
-                cmd = new MySqlCommand( q, connection);
-                cmd.ExecuteNonQuery();
-                connection.Close();
-                return true;
+                    cmd = new MySqlCommand(qu, connection);
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                    return true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
+
                 return false;
             }
         }

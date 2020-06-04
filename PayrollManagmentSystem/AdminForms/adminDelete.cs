@@ -164,5 +164,15 @@ namespace PayrollManagmentSystem.AdminForms
         {
             searchBtn.BackColor = Color.DarkSlateGray;
         }
+
+        private void delBtn_MouseHover(object sender, EventArgs e)
+        {
+            delBtn.BackColor = Color.Red;
+        }
+
+        private void delBtn_MouseLeave(object sender, EventArgs e)
+        {
+            delBtn.BackColor = Color.DarkSlateGray;
+        }
     }
 }

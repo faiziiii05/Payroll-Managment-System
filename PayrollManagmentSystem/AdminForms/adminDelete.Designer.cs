@@ -480,6 +480,8 @@
             this.delBtn.Text = "Delete";
             this.delBtn.UseVisualStyleBackColor = false;
             this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
+            this.delBtn.MouseLeave += new System.EventHandler(this.delBtn_MouseLeave);
+            this.delBtn.MouseHover += new System.EventHandler(this.delBtn_MouseHover);
             // 
             // adminDelete
             // 

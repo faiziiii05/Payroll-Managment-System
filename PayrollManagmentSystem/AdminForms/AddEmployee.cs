@@ -74,6 +74,7 @@ namespace PayrollManagmentSystem.AdminForms
                if ( sql.InsertEmployee(emID,emName,emEmail,emCon,emAd,emDOB,emJob,emDep,emSal,emDate)==true)
                 {
                     MessageBox.Show("Data Insert Successfully", "Data Inserted");
+                    changeTheFormPanel(new AdminForms.adminProfile());
                 }
                else
                 {

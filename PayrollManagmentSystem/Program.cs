@@ -16,7 +16,7 @@ namespace PayrollManagmentSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminForms.adminDelete());
+            Application.Run(new LoginForm());
         }
     }
 }
